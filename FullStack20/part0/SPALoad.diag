@@ -1,0 +1,18 @@
+title Single Page Application — loading
+
+Browser->Server: http GET https://studies.cs.helsinki.fi/exampleapp/spa
+Server-->Browser: HTML
+Browser->Server: http GEThttps://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main.css
+Browser->Server: http get GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Server-->Browser: spa.js
+note over Browser:
+Execution of 'spa.js' begins
+end note
+Browser -> Server: http GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server --> Browser: data.json
+note over Browser:
+Re-redndering of 'notes' based on data.json
+end note
+
+
