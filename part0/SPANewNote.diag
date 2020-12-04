@@ -1,0 +1,16 @@
+title Single Page Application — Creating a new note
+
+
+note over Browser:
+User types note content into the text input and submits the form.
+end note
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Server-->Browser: json
+note over Browser:
+DOM updated based on received json and page re-rendered
+end note
+
+
+
+
